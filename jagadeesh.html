@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>engineerHUB</title>
+    <style>
+        /* Reset default margin and padding */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set background color and text color for body */
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Style header */
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 50px;
+            text-align: left;
+        }
+
+        /* Style header h1 */
+        header h1 {
+            font-size: 26px;
+        }
+
+
+        /* Style navigation menu */
+        nav {
+            background-color: #005588;
+            padding: 10px;
+        }
+
+        /* Style navigation menu ul */
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: right;
+        }
+
+        /* Style navigation menu li */
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        /* Style navigation menu li a */
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        /* Style navigation menu li a:hover */
+        nav ul li a:hover {
+            background-color: #0077bb;
+        }
+
+        /* Style section with image and text */
+        #section {
+            padding: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #section img {
+            width: 390px;
+            border-radius: 50%;
+            margin-bottom: 50px;
+        }
+
+        #section p {
+            text-align: left;
+        }
+
+
+* {
+  font-family: Open Sans;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: rgb(255, 255, 255);
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+
+}
+
+.footer-distributed{
+	background: rgb(53, 49, 49);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  rgb(255, 247, 247);
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #ffffff;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+
+html {
+  border-top: 5px solid #fff;
+  background: #58DDAF;
+  color: #2a2a2a;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+}
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 300px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+section{
+    body {
+	align-items: center;
+	background: #E3E3E3;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+}
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+// Styling
+.slider {
+	background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 960px;
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+	.slide {
+		height: 100px;
+		width: 250px;
+	}
+}
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+    
+    html {
+      box-sizing: border-box;
+    }
+    
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+    
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+    }
+    
+    .about-section {
+      padding: 20px;
+      text-align: center;
+      background-color: #474e5d;
+      color: white;
+    }
+    
+    .container {
+      padding: 0 16px;
+    }
+    
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .title {
+      color: grey;
+    }
+    
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    .button:hover {
+      background-color: #555;
+    }
+    
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <h1>engineerHUB</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Domains</a></li>
+                <li><a href="#about">Courses</a></li>
+                <li><a href="#contact">Internships</a></li>
+                <li><a href="#Magazine">Magazine</a></li>
+                <li><a href="#Hiring">Hiring</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="section">
+        <p text-align="center" style="color:#0b3c58; font-size:160%">Our branches in India</p>
+        <img src="https://media.istockphoto.com/id/157997434/photo/three-dimensional-map-of-india.jpg?s=612x612&w=0&k=20&c=pMKn4R_22IywLldiYjPTO3sQMtY_6RX0zyKJv9kBbUc=" alt="Example Image">
+    </section>
+
+    <section>
+            <p text-align="center" style="color:#0b3c58; font-size:160%">Our students comes from</p>
+            <div id="slider">
+                <a href="#" class="control_next">></a>
+                <a href="#" class="control_prev"><</a>
+                <ul>
+                  <li>
+                    <img src="https://i.pinimg.com/originals/53/4c/38/534c38e94dc41f8f4ed6183ca2233ace.png" width="300" height="300">
+                  </li>
+                  <li style="background: #aaa;"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Indian_Institute_of_Technology_Delhi_Logo.svg/1200px-Indian_Institute_of_Technology_Delhi_Logo.svg.png" width="300" height="300"></li>
+                  <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/IIT_Kharagpur_Logo.svg/1200px-IIT_Kharagpur_Logo.svg.png" width="300" height="300">
+                  </li>
+                </ul>  
+            </div>
+
+
+    </section>
+
+    <section>
+        <p text-align="center" style="color:#0b3c58; font-size:160%">Our students comes from</p>
+        <div class="InfiniteSlider_slider__u1SAS"><div class="InfiniteSlider_slide_track__x1bpS"><div class="InfiniteSlider_slide__cYGAJ"><img src="https://ehubtestbucket.s3.ap-south-1.amazonaws.com/CompaniesLogo/oracle.svg" height="100" width="250" alt=""></div><div class="InfiniteSlider_slide__cYGAJ"><img src="https://ehubtestbucket.s3.ap-south-1.amazonaws.com/CompaniesLogo/tka.png" height="100" width="150" alt=""></div><div class="InfiniteSlider_slide__cYGAJ"><img src="https://ehubtestbucket.s3.ap-south-1.amazonaws.com/CompaniesLogo/nkosh.png" height="100" width="150" alt=""></div><div class="InfiniteSlider_slide__cYGAJ"><img src="https://ehubtestbucket.s3.ap-south-1.amazonaws.com/CompaniesLogo/deciml.png" height="100" width="250" alt=""></div><div class="InfiniteSlider_slide__cYGAJ"><img src="https://ehubtestbucket.s3.ap-south-1.amazonaws.com/CompaniesLogo/create.png" height="100" width="150" alt=""></div><div class="InfiniteSlider_slide__cYGAJ"><img src="https://ehubtestbucket.s3.ap-south-1.amazonaws.com/CompaniesLogo/Eduncle.png" height="100" width="150" alt=""></div><div class="InfiniteSlider_slide__cYGAJ"><img src="https://ehubtestbucket.s3.ap-south-1.amazonaws.com/CompaniesLogo/IOTR.png" height="100" width="160" alt=""></div></div></div>
+
+    </section>
+
+    <section>
+        <div class="about-section">
+            <h1>About Us</h1>
+            <p>engineerHUB is INDIA's leading community of engineers where students or alumni from IITs, NITs, IIITs and state colleges unite together to develop and nurture the skills of students all over India.
+                Our goal is to counsel beginners in the field by providing them with basic guidelines about how and where to start their learning.</p>
+          </div>
+    </section>
+    <section>
+          <h2 style="text-align:center">What our Members think about us</h2>
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg" alt="Jane" style="width:20%">
+                <div class="container">
+                  <h2>Manish K R</h2>
+                  <p class="title">Developer</p>
+                  <p>" The extreme efforts and hardwork of each member of the community is appreciable. "</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg" alt="Mike" style="width:20%">
+                <div class="container">
+                  <h2>Rahul K.M</h2>
+                  <p class="title">Developer</p>
+                  <p>" The community provides updated content and authorized resources to benefit students with various courses to brush up their skills. "</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <img src="https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg" alt="John" style="width:20%">
+                <div class="container">
+                  <h2>Swapnil</h2>
+                  <p class="title">Senior Coordinator</p>
+                  <p>" The "Weekend with Us" Peogram organised by the company provides a framework for the students to help them prepare for the placements. "</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </section>
+    
+
+    
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3><span>engineerHUB</span></h3>
+
+				<p class="footer-links">
+					<a href="#" class="link-1">Home</a>
+					
+					<a href="#">Magazine</a>
+				
+					<a href="#">Courses</a>
+				
+					<a href="#">Events</a>
+				</p>
+
+			</div>
+
+			<div class="footer-center">
+                <h3><span>About Us</span></h3>
+
+                <p>engineerHUB is INDIA's largest community of engineers where students(alumni) from IITs, NITs, IIITs and state colleges join together to develop and nurture students skills coming from all over India</p>
+
+				
+
+                
+
+			</div>
+
+			<div class="footer-right">
+
+                <h3><span>Contact Us</span></h3>
+
+				<p class="footer-company-about">
+                    <a href="mailto:support@company.com">info@shobaenterprise.in</a>
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+    </body>
+    </html>
+
+
